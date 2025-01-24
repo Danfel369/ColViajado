@@ -3,7 +3,8 @@ body{
     font-weight: 400;
     margin: 0;
     font-size: large;
-    min-width: 200px;
+    min-width:200px;
+    overflow-x: hidden;
 }
 /* PARTE DE HEADER Y NAVEGACION*/
 header{
@@ -19,7 +20,7 @@ header{
     width: 100%;
     background-color: #025259;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content:space-around;
     padding: 0 20px 0 48px;
     position:sticky;
@@ -36,9 +37,13 @@ li a{
     margin: 0;
     align-items: center;
 }
+.nav_link_main{
+    height: 95px;
+    width: 90px;
+}
 .nav__icon{
-    height: 105px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     
 }
@@ -63,9 +68,6 @@ li a{
 
 /*FORMULARIO*/
 
-.img{
-
-}
 .formulario{
     margin:400px 100px 0 450px;
 }

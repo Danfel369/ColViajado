@@ -2,8 +2,8 @@ body{
     font-family: sans-serif;
     font-weight: 400;
     margin: 0;
-    font-size: large;
     min-width: 200px;
+    box-sizing: border-box;
 }
 .inicio{
     padding: 0;
@@ -11,27 +11,21 @@ body{
 /* PARTE DE HEADER Y NAVEGACION*/
 header{
     position: sticky;
+    box-sizing: border-box;
     display:flex;
     align-items: center;
     top: 0;
+    box-shadow:0 -8 10px color=#000a;
 }
-
-
-
 .navbar{
     width: 100%;
     background-color: #025259;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content:space-around;
     padding: 0 20px 0 48px;
     position:sticky;
     top: 0;
-}
-
-li a{
-    text-decoration: none;
-    color: #fff;
 }
 .nav__list{
     list-style: none;
@@ -39,21 +33,22 @@ li a{
     margin: 0;
     align-items: center;
 }
+.nav_link_main{
+    height: 95px;
+    width: 90px;
+}
 .nav__icon{
-    height: 105px;
-    width: 100px;
-    border-radius: 50%;
-    
+    height: 90px;
+    width: 90px;
+    border-radius: 50%; 
 }
 .nav__link{
+    font-size: large;
+    font-weight: 600;
     padding: 20px;
+    text-decoration: none;
+    color:#fff
 }
-.nav__link_registro{
-    padding: inherit;
-    
-}
-
-
 .nav__item{
     display: inline-block;
     padding: 15px 10px;
@@ -77,6 +72,12 @@ h1{
     background: url(../imgs/paisajecafetero.jpg) center //* importante poner ese slash*/cover fixed;
     text-align:center;
 }
+.img_h2{
+    margin: 0;
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: xx-large;
+}
 .opacidad{
     width: 100%;
     height: 100%;
@@ -92,19 +93,25 @@ h1{
     color:white;
     text-align: center;
 }
-h2{
-    padding: 80px 0;
+.destinos_h2{
+    padding: 0px 0;
     margin: 0;
-    word-spacing: 1.3px;
-    letter-spacing: 3px;
+    word-spacing: 0.1px;
+    letter-spacing: 0.8px;
+    padding-top:45px ;
 }
 
-
-
+/*SECCION REGIONES 2*/
+.regiones_h2{
+    margin: 0;
+}
+.regiones{
+    background-color: #d94f04;
+}
 
 /*SECCION DEL FINAL*/
 .final{
     width: 100%;
     height: 700px;
-    background-color: #d94f04;
+    background-color: #f4e2de;
 }
