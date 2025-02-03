@@ -4,6 +4,8 @@ body{
     margin: 0;
     min-width: 200px;
     box-sizing: border-box;
+    background-color:#cb82 ;
+    /*Importar Font: Noto Sans*/
 }
 .inicio{
     padding: 0;
@@ -68,7 +70,7 @@ h1{
 .img{
     color: #fff;
     width: 100%;
-    height: 450px;
+    height: 550px;
     background: url(../imgs/paisajecafetero.jpg) center //* importante poner ese slash*/cover fixed;
     text-align:center;
 }
@@ -100,7 +102,23 @@ h1{
     letter-spacing: 0.8px;
     padding-top:45px ;
 }
-
+.contenedor_destinos{
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row-reverse;
+}
+.dest{
+    width: 250px;
+    height: 280px;
+    margin: 10px;
+    
+}
+.dest_img{
+    max-width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 20px;
+}
 /*SECCION REGIONES 2*/
 .regiones_h2{
     margin: 0;

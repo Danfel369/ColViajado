@@ -71,3 +71,16 @@ li a{
 .formulario{
     margin:400px 100px 0 450px;
 }
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    height: 40vh;
+    width: 100%;
+    background-color: #f4e2de;
+}
