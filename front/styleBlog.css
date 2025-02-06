@@ -1,19 +1,24 @@
 body{
-    font-family: Noto sans, sans-serif, verdana;
+    font-family: Noto sans;
     font-weight: 400;
     margin: 0;
-    font-size: large;
-    min-width:200px;
-    background-color:#cb82 ;
+    min-width: 200px;
+    box-sizing: border-box;
+    background-color:#cb82;
 }
-/* PARTE DE HEADER Y NAVEGACION*/
 header{
     position: sticky;
+    box-sizing: border-box;
     display:flex;
     align-items: center;
     top: 0;
+    box-shadow:0 -8 10px color=#000a;
+    z-index: 20;
 }
-
+li a{
+    text-decoration: none;
+    color: #fff;
+}
 .navbar{
     width: 100%;
     background-color: #025259;
@@ -21,13 +26,8 @@ header{
     flex-wrap: wrap;
     justify-content:space-around;
     padding: 0 20px 0 10px;
-    position:sticky;
-    top: 0;
-}
+    position:relative;
 
-li a{
-    text-decoration: none;
-    color: #fff;
 }
 .nav__list{
     list-style: none;
@@ -42,14 +42,12 @@ li a{
 .nav__icon{
     height: 90px;
     width: 90px;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
 }
 .nav__link{
     font-size: large;
     padding: 20px;
 }
-
 .nav__item{
     display: inline-block;
     padding: 15px 10px;
@@ -58,23 +56,4 @@ li a{
 .nav__item:hover{
     background-color: #007172;
     border-radius: 5px;
-}
-
-/*FORMULARIO*/
-
-.formulario{
-    margin:400px 100px 0 450px;
-}
-
-
-
-
-
-
-/* Footer */
-
-footer{
-    height: 40vh;
-    width: 100%;
-    background-color: #f4e2de;
 }
